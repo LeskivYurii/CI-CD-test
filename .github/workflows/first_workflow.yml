@@ -1,12 +1,13 @@
 # your-repo-name/.github/workflows/first_workflow.yml
-name: hello_workflow
+name: hs_workflow_intro_to_github_actions
 on: [push]
 jobs:
-  print-hello:
+  show-secret-phrase:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Hello world using echo
-        run: echo "$(<hello.txt)"
-      - name: Hello world using cat
+        with:
+         repository: abystoma/test
+         ref: main
+      - name: Show me the answer
         run: cat hello.txt
