@@ -10,4 +10,4 @@ jobs:
          repository: abystoma/test
          ref: main
       - name: Show me the answer
-        run: cat hello.txt
+        run: cat answer.txt
