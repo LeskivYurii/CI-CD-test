@@ -4,9 +4,7 @@ jobs:
   external-workflow:
     runs-on: ubuntu-latest
     steps:
-      - name: Greetings
-        uses: actions/checkout@v4
-        with:
-          repository: abystoma/external-workflow
+        - uses: actions/checkout@v4
+        - name: Greetings
           run: echo "$(<greeting.txt)"
       
