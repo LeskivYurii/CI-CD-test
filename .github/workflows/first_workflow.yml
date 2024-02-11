@@ -1,5 +1,5 @@
 name: commit_checkout
-on: [push]
+on: push
 jobs:
   external-workflow:
     runs-on: ubuntu-latest
